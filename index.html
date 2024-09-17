@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Proyecto Biometría</title>
+    <title>Última Medición</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -14,10 +14,35 @@
         h1 {
             color: #333;
         }
+        .measurement {
+            font-size: 24px;
+            color: #007BFF;
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Bienvenido al Proyecto de Biometría</h1>
-    <p>Esta es la estructura base del Frontend.</p>
+    <h1>Última Medición</h1>
+    <div id="latest-measurement" class="measurement">Cargando la última medición...</div>
+
+    <script>
+        // Función para obtener la última medición desde el backend
+        async function getLatestMeasurement() {
+            try {
+                const response = await fetch('http://localhost:3000/ultima-medicion'); // Ajusta la URL si es necesario
+                if (!response.ok) {
+                    throw new Error('Error en la solicitud al backend');
+                }
+                const data = await response.json();
+                document.getElementById('latest-measurement').textContent = `Última medición: ${data.medicion}, Valor: ${data.valor}`;
+            } catch (error) {
+                console.error('Error al obtener la medición:', error);
+                document.getElementById('latest-measurement').textContent = 'Error al cargar la última medición.';
+            }
+        }
+
+        // Llamar a la función cuando se cargue la página
+        getLatestMeasurement();
+    </script>
 </body>
 </html>
