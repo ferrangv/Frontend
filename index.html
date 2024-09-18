@@ -1,15 +1,307 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Breathe Better</title>
-    <link rel="stylesheet" href="/css/styles.css"> <!-- Vincula el archivo CSS -->
+
+     <title>Aireva</title>
+
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="author" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+     <link rel="stylesheet" href="css/magnific-popup.css">
+     <!-- Enlace a Font Awesome desde CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+     <!-- MAIN CSS -->
+     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Última Medición</h1>
-    <div id="latest-measurement" class="measurement">Cargando la última medición...</div>
 
-    <script src="js/latest-measurement.js"></script> <!-- Vincula el archivo JavaScript -->
+   
+
+
+     <!-- MENU -->
+     <section class="navbar custom-navbar navbar-fixed-top" role="navigation">
+          <div class="container">
+
+               <div class="navbar-header">
+                    <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                         <span class="icon icon-bar"></span>
+                    </button>
+
+                    <!-- lOGO TEXT HERE -->
+                    <a href="index.html" class="navbar-brand">AIREVA</a>
+               </div>
+
+               <!-- MENU LINKS -->
+               <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-nav-first">
+                         <li><a href="#home" class="smoothScroll">Inicio</a></li>
+                         <li><a href="#about" class="smoothScroll">Más información</a></li>
+                         <li><a href="#work" class="smoothScroll">Proyecto Biometria</a></li>
+                         <li><a href="#contact" class="smoothScroll">Contacto</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                        <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                    
+               </div>
+
+          </div>
+     </section>
+
+     <!-- HOME -->
+     <section id="home" data-stellar-background-ratio="0.5">
+          <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-6 col-sm-12">
+                         <div class="home-info">
+                              <br><br>
+                              <h1>Aqui va un slogan</h1>
+                              <a href="#about" class="btn section-btn smoothScroll">Más información</a>
+                              <span>
+                                   Llámanos al (+34) 600 00 00 00
+                                   <small>Le resolveremos cualquier duda</small>
+                                   <br>
+                                   Lorem ipsum, dolor sit amet  
+                                   <br>
+                                   consectetur adipisicing elit.
+                                   <br>
+                                   Eligendi ducimus maiores odit
+                              </span>
+                         </div>
+                    </div>
+
+                    
+
+                    <div class="col-md-4 col-sm-12">
+                        <div id="latest-measurement" class="measurement">Cargando la última medición...</div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+
+     <!-- MAS INFORMACION -->
+     <section id="about" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-5 col-sm-6">
+                         <div class="about-info">
+                              <div class="section-title">
+                                   <h2>Texto de ejemplo</h2>
+                                   <span class="line-bar">...</span>
+                              </div>
+                              <p>Texto de ejemplo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+                              <p>Texto de ejemplo Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor.</p>
+                         </div>
+                    </div>
+
+
+                    <div class="col-md-4 col-sm-12">
+                         <div class="about-image">
+                              <img src="images\foto-de-ejemplo.jpg" class="img-responsive" alt="">
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </section>
+
+     <!-- WORK -->
+     <section id="work" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Proyecto Biometria</h2>
+                              <span class="line-bar">...</span>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="images/work-image1.jpg" class="image-popup">
+                                   <img src="images/work-image1.jpg" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Arduino</h3>
+                                        <small>Texto ejemplo</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="images/work-image2.jpg" class="image-popup">
+                                   <img src="images/work-image2.jpg" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Android Studio</h3>
+                                        <small>Texto ejemplo</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="images/work-image3.jpg" class="image-popup">
+                                   <img src="images/work-image3.jpg" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Frontend</h3>
+                                        <small>Texto ejemplo</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                         <!-- WORK THUMB -->
+                         <div class="work-thumb">
+                              <a href="images/work-image4.jpg" class="image-popup">
+                                   <img src="images/work-image4.jpg" class="img-responsive" alt="Work">
+
+                                   <div class="work-info">
+                                        <h3>Backend</h3>
+                                        <small>Texto ejemplo</small>
+                                   </div>
+                              </a>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+     <!-- CONTACT -->
+     <section id="contact" data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="section-title">
+                              <h2>Contáctanos</h2>
+                              <span class="line-bar">...</span>
+                         </div>
+                    </div>
+
+                    <div class="col-md-8 col-sm-8">
+                        
+                         <!-- CONTACT FORM HERE -->
+                         <form id="contact-form" role="form" action="#" method="post">
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="text" class="form-control" placeholder="Nombre" id="cf-name" name="cf-name" required="">
+                              </div>
+
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="email" class="form-control" placeholder="Correo" id="cf-email" name="cf-email" required="">
+                              </div>
+
+                              <div class="col-md-6 col-sm-6">
+                                   <input type="tel" class="form-control" placeholder="Teléfono (opcional)" id="cf-number" name="cf-number">
+                              </div>
+
+                              <div class="col-md-12 col-sm-12">
+                                   <textarea class="form-control" rows="6" placeholder="Tu consulta" id="cf-message" name="cf-message" required=""></textarea>
+                              </div>
+
+                              <div class="col-md-4 col-sm-12">
+                                   <input type="submit" class="form-control" name="submit" value="Enviar mensaje">
+                              </div>
+
+                         </form>
+                    </div>
+
+                    <div class="col-md-4 col-sm-4">
+                         <div class="google-map">
+	<!-- How to change your own map point
+            1. Go to Google Maps
+            2. Click on your location point
+            3. Click "Share" and choose "Embed map" tab
+            4. Copy only URL and paste it within the src="" field below
+	-->
+                              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3100.8477116862236!2d-0.1683139886045709!3d38.9959718715852!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd61c2a3069621fd%3A0xdb8ad87b84df4b24!2sUPV%20Campus%20de%20Gandia%20-%20Escola%20Polit%C3%A8cnica%20Superior%20de%20Gandia!5e0!3m2!1ses!2ses!4v1726651779945!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+     
+
+
+     <!-- FOOTER -->
+     <footer data-stellar-background-ratio="0.5">
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-5 col-sm-12">
+                         <div class="footer-thumb footer-info"> 
+                              <h2>AIREVA</h2>
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                         </div>
+                    </div>
+
+
+                    <div class="col-md-3 col-sm-4"> 
+                         <div class="footer-thumb"> 
+                              <h2>Visítanos</h2>
+                              <p>Carrer del Paranimf, 1, <br> 46730 Gandia, Valencia</p>
+                         </div>
+                    </div>                    
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="footer-bottom">
+                              <div class="col-md-6 col-sm-5">
+                                   <div class="copyright-text"> 
+                                        <p>Copyright &copy; 2024 Aireva</p>
+                                   </div>
+                              </div>
+                              <div class="col-md-6 col-sm-7">
+                                   <div class="phone-contact"> 
+                                        <p>Llámanos <span>(+34) 600 00 00 00</span></p>
+                                   </div>
+                                   <ul class="social-icon">
+                                    <li><a href="" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+                                    <li><a href="" target="_blank"><i class="fab fa-instagram"></i></a></li>
+                                </ul>
+                                
+                              </div>
+                         </div>
+                    </div>
+                    
+               </div>
+          </div>
+     </footer>
+
+
+     <!-- SCRIPTS -->
+     <script src="js/latest-measurement.js"></script>
+     <script src="js/jquery.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/jquery.stellar.min.js"></script>
+     <script src="js/jquery.magnific-popup.min.js"></script>
+     <script src="js/smoothscroll.js"></script>
+     <script src="js/custom.js"></script>
+
 </body>
 </html>
